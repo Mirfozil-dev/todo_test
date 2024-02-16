@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__tabs {
+    display: flex;
+    gap: 20px;
+}
+.navigation__tabs button {
+    background: none;
+    border: solid 1px #b9b9b9;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.navigation__tabs button.active {
+    border: solid 1px #3c3c3c;
+}
+.navigation__form {
+    display: flex;
+    gap: 20px;
+}
+.navigation__form input {
+    width: 200px;
+    height: 38px;
+    border: solid 1px #b9b9b9;
+    border-radius: 6px;
+    padding: 0 10px;
+    outline: none;
+}
+.navigation__form button {
+    height: 38px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.task_card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(12,12,12,0.2);
+}
+.task_card__task {
+    display: flex;
+    gap: 20px;
+}
+
+.task_card__task input {
+    width: 20px;
+    height: 20px;
+}
+
+.task_card #delete_btn{
+    padding: 5px 10px;
+    color: #ffffff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+}
+
+.tasks_container {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation__form {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+    .navigation__tabs, .navigation__form {
+        gap: 10px;
+    }
+    .navigation__tabs button {
+        padding: 10px;
+    }
+}
